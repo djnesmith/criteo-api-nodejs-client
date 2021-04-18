@@ -1,6 +1,6 @@
 {
-  "name": "criteo-api",
-  "version": "2021.01.3",
+  "name": "criteo-api-retail",
+  "version": "2021.04.17.8",
   "description": "A NodeJS Client For Criteo API Requests",
   "main": "./lib/criteo_api.js",
   "directories": {
