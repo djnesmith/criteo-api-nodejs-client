@@ -117,7 +117,7 @@ interface ReportStatusResponse {
 
 declare class Criteo_API {
     constructor(key: string, secret: string);
-    getAccounts(callback?:(err: any, res: any) => void): Promise<any>;
+    getAccounts(callback?:(err: any, res: any) => void): Promise<AccountsResponse | undefined>;
     getCampaignsByAccountId(accountId:string, pageInfo?:PageInfo, callback?:(err: any, res: any) => void): Promise<CampaignsResponse | undefined>;
     getLineItemsByCampaignId(campaignId:string, pageInfo?:PageInfo, callback?:(err: any, res: any) => void): Promise<LineItemsResponse | undefined>;
     getReport(reportType:"campaigns" | "line-items", query:ReportQuery, callback?:(err: any, res: any) => void): Promise<ReportStatusResponse | undefined>;
